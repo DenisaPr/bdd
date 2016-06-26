@@ -1,0 +1,48 @@
+body {
+/*	background-color: #f3f2f3;
+    font-family: Segoe UI, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: Segoe UI, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;*/
+}
+header{
+	background-image: url("../img/header_trimmed.png");
+	background-repeat: repeat-x;
+}
+.top_menu_wrapper {
+	display: block;
+}		
+.logo img{
+    padding-left: 7rem;
+}
+.menu {
+	margin-top: 5rem;
+	padding-left: 5rem;
+}
+.menu a {
+	display: inline-block;
+	color: #ffffff;
+    font-size: 18px;
+    font-family: 'SegoeUI-SemiBold', Segoe UI, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.menu a:not(:first-child)::before {
+    content: "•";
+    width: 8px;
+    position: relative;
+    float: left;
+    margin-right: 5px;
+}
+.mid-image {
+	height: 49rem;
+	background: url(../img/imagine_principala.png);
+}
+.form {
+	position: relative;
+}
+.form-title {
+	font-size: 18px;
+} 

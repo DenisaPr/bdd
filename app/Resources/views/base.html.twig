@@ -2,12 +2,24 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Donatii{% endblock %}</title>
+        {% stylesheets '@bootstrap_css' %}
+            <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}"/>
+            <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+        {% endstylesheets %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% include 'header.html.twig' %}
+
+        {% block body %}
+        {% endblock %}
+
+        {% include 'footer.html.twig' %}
+        {% block javascripts %}
+        {% endblock %}
     </body>
 </html>
