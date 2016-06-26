@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+	{% block title %}Denisa Application{% endblock %}
+	{% block content %}
+	    {% block fos_user_content %}
+
+	    {% endblock %}
+	    <ul>
+    		<li><a href="/register">Cont nou</a></li>
+	    	<li><a href="{{ path('fos_user_resetting_request') }}">Recuperare parola</a></li>
+    	</ul>
+	{% endblock %}
+{% endblock %}
+
